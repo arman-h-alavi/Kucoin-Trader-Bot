@@ -1,2 +1,2 @@
 # Kucoin-Trader-Bot
-This bot is programmed to check the price and other specified parameters for given cryptocurrency symbols on the Kucoin exchange every 60 minutes. Based on the parameters 'Average True Range', 'Relative Strength Index', and 'Rolling Min/Max', along with the proposed strategy, the bot will place buy or sell orders and close positions when the target criteria are met.
+The bot retrieves hourly OHLCV data, computes ATR, RSI, rolling highs/lows, and volume metrics to generate buy/sell/close signals. It dynamically adjusts position sizes based on account balance, enforces rate-limiting to avoid API bans, and manages both entry and exit strategies for long and short positions. Supports multiple trading pairs and automated session scheduling.
